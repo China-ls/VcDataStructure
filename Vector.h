@@ -1,11 +1,21 @@
 #pragma once
 
+#include <istream>
+
 #ifndef VOID
 #define VOID void
 #endif
 
 #ifndef OUT
 #define OUT
+#endif
+
+#ifndef NULL
+#ifdef __cplusplus
+#define NULL 0
+#else
+#define NULL ((void *)0)
+#endif
 #endif
 
 #define VEC_ERROR_SUCCESS 1
